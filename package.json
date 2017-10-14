@@ -12,12 +12,12 @@
     "android",
     "mobile"
   ],
-  "homepage": "https://github.com/GGwujun/pageui#readme",
+  "homepage": "https://github.com/Quanruan/pageui#readme",
   "style": "dist/css/pageui.css",
   "less": "less/pageui.less",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GGwujun/pageui.git"
+    "url": "git+https://github.com/Quanruan/pageui.git"
   },
   "license": "MIT",
   "scripts": {
@@ -48,7 +48,7 @@
     "node": ">=0.10.1"
   },
   "bugs": {
-    "url": "https://github.com/GGwujun/pageui/issues"
+    "url": "https://github.com/Quanruan/pageui/issues"
   },
   "main": "Gruntfile.js",
   "directories": {
