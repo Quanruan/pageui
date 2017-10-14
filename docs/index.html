@@ -1,0 +1,76 @@
+---
+layout: home
+title: pageui
+---
+
+<div class="docs-header">
+  {% include masthead.html %}
+  <div class="docs-header-content">
+    <p class="docs-subtitle">轻量，小巧且精美的UI库<br />方便迅速搭建手机H5应用</p>
+    <a data-ignore="push" href="https://github.com/GGwujun/pageui" class="btn btn-primary" onClick="">访问Github</a>
+    <p class="version">V{{ site.version }}</p>
+    <div class='git-buttons'>
+      <iframe border="0" width="90" height="24" src="http://ghbtns.com/github-btn.html?user=GGwujun&repo=pageui&type=watch&count=true"></iframe>
+      <iframe border="0" width="100" height="24" src="http://ghbtns.com/github-btn.html?user=GGwujun&repo=pageui&type=fork&count=true"></iframe>
+     
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    </div>
+  </div>
+</div>
+
+<div class="index-content docs-content">
+  <h2>立即试用!</h2>
+
+  <p>通过 npm 安装代码: <code>npm install pageui</code>.</p>
+  <p>推荐在github上clone代码并自行编译 - <a href="https://github.com/GGwujun/pageui" target="_blank">pageui on github</a>. 也可以点击 <a href="https://github.com/GGwujun/pageui/archive/build.zip" target="_blank">这里下载zip文件</a>.</p>
+
+  <p>所有的编译后的代码都在 <code>dist</code> 目录下，然后像这样引入代码: </p>
+
+{% highlight html %}
+<!-- in head -->
+<link rel="stylesheet" href="dist/css/pageui.min.css">
+
+<!-- at the end of body -->
+<script type='text/javascript' src='jquery.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='dist/js/pageui.min.js' charset='utf-8'></script>
+{% endhighlight %}
+
+  <p>然后你就可以直接调用 <code>$.alert</code> 来显示一个对话框:</p>
+{% highlight js %}
+$.alert("Hello pageui");
+{% endhighlight %}
+
+
+  <h2>为什么选择 pageui ?</h2>
+
+  <h3>轻量且强大</h3>
+  <p>pageui 是一个库而不是一个框架。它提供了 20+ 个常用的组件，却只有 82K JS 和 117K CSS 大小的两个文件。大部分时候你只需把组件的HTML代码复制到自己的HTML文件中即可。</p>
+  <p>pageui 依赖 <a href="http://jquery.com/" target="_blank">jQuery</a> 或者 <a href='http://zeptojs.com/'>zeptojs</a>, 如果你以前用过 jQuery/Zepto 那么没有任何上手难度.</p>
+
+  <div class="section clearfix">
+    <div class="round">
+      <img src="http://gtms01.alicdn.com/tps/i1/TB1IFKdIFXXXXcmaXXXLIffVVXX-640-1136.png" alt="">
+    </div>
+    <h3>炫酷的iOS风格</h3>
+    <p>我们的组件都是按照iOS风格设计的，所有有很多组件都是iOS独有的炫酷设计。</p>
+  </div>
+
+  <div class="section clearfix">
+    <h3>强大的组件</h3>
+    <p>pageui 提供了很多功能强大的组件 - Pull-to-refresh, Action Sheet and Notification.</p>
+    <div class="components-img">
+      <img width='320' src="/img/home/ptr.gif" alt="">
+      <img width='320' src="/img/home/actions.gif" alt="">
+      <img width='320' src="/img/home/noti.gif" alt="">
+    </div>
+  </div>
+
+  <div class="section clearfix">
+    <h3>换肤</h3>
+    <p>我们提供了四种主题色，以及夜间模式，<a href="/components/#themes" target="_blank">点击查看换肤文档</a>。</p>
+  </div>
+
+</div>
+
+{% include footer.html %}
