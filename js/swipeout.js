@@ -426,14 +426,14 @@
           var text = clickedData.confirm;
           var title = clickedData.confirmTitle;
           if (title) {
-            $.confirm(text, title, function () {
+            $.confirm({text:text, title:title}, function () {
               $.swipeoutDelete(clicked.parents('.swipeout'));
             }, function () {
               if (clickedData.closeOnCancel) $.swipeoutClose(clicked.parents('.swipeout'));
             });
           }
           else {
-            $.confirm(text, function () {
+            $.confirm({text:text}, function () {
               $.swipeoutDelete(clicked.parents('.swipeout'));
             }, function () {
               if (clickedData.closeOnCancel) $.swipeoutClose(clicked.parents('.swipeout'));
@@ -443,7 +443,6 @@
         else {
           $.swipeoutDelete(clicked.parents('.swipeout'));
         }
-
       }
     });
   });
